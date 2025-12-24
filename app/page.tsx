@@ -24,20 +24,24 @@ export default function Home() {
                 </div>
             </section>
 
-            <section style={{ padding: '4rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-                {[1, 2, 3].map((i) => (
-                    <div key={i} style={{
-                        aspectRatio: '16/9',
-                        background: 'var(--secondary)',
-                        borderRadius: '12px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        opacity: 0.5
-                    }}>
-                        <span>Content Placeholder {i}</span>
+            <section style={{ padding: '6rem 0' }}>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '4rem' }}>
+                    Masters of Balance
+                </h2>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+                    <div style={{ padding: '2rem', background: 'var(--secondary)', borderRadius: '1rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Daily Drills</h3>
+                        <p style={{ opacity: 0.7 }}>Short, effective daily handstand drills to build consistency and form.</p>
                     </div>
-                ))}
+                    <div style={{ padding: '2rem', background: 'var(--secondary)', borderRadius: '1rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>Premium Sessions</h3>
+                        <p style={{ opacity: 0.7 }}>Hour-long deep dives into alignment, pressing mechanics, and mobility.</p>
+                    </div>
+                    <div style={{ padding: '2rem', background: 'var(--secondary)', borderRadius: '1rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1rem' }}>The Archive</h3>
+                        <p style={{ opacity: 0.7 }}>Access to over 70 exclusive tutorials covering every angle: shoulders, spine, and hips.</p>
+                    </div>
+                </div>
             </section>
         </div>
     );

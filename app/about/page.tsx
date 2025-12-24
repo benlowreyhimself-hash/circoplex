@@ -9,9 +9,7 @@ export default function About() {
                 <p style={{ marginBottom: '1.5rem' }}>
                     With over 70 tutorials and 500 workshops filmed over four years, we break down every angle of the handstand: from shoulder mobility to spine alignment and hip positioning.
                 </p>
-                <p>
-                    [This is a placeholder for the About content. Original content from WordPress can be migrated here.]
-                </p>
+
             </div>
         </div>
     );
