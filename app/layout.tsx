@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import GTM from "@/components/GTM";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Circoplex",
     description: "Performance and Life",
+    icons: {
+        icon: '/favicon.png',
+        shortcut: '/favicon.png',
+        apple: '/favicon.png',
+    }
 };
 
 export default function RootLayout({
@@ -15,6 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
+                <GTM />
                 <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                     <header style={{ padding: '2rem 0', borderBottom: '1px solid var(--accent)' }}>
                         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
