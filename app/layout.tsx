@@ -25,10 +25,13 @@ export default function RootLayout({
                 <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                     <header style={{ padding: '2rem 0', borderBottom: '1px solid var(--accent)' }}>
                         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+                            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.5rem', fontWeight: 'bold' }}>
+                                <img src="/favicon.png" alt="Circoplex" style={{ width: '40px', height: '40px', borderRadius: '8px' }} />
                                 Circoplex
                             </Link>
                             <nav style={{ display: 'flex', gap: '2rem' }}>
+                                <Link href="/workshops" style={{ opacity: 0.8, transition: 'opacity 0.2s' }}>Workshops</Link>
+                                <Link href="/tutorials" style={{ opacity: 0.8, transition: 'opacity 0.2s' }}>Tutorials</Link>
                                 <Link href="/about" style={{ opacity: 0.8, transition: 'opacity 0.2s' }}>About</Link>
                                 <Link href="/blog" style={{ opacity: 0.8, transition: 'opacity 0.2s' }}>Blog</Link>
                                 <Link href="/contact" style={{ opacity: 0.8, transition: 'opacity 0.2s' }}>Contact</Link>
@@ -43,6 +46,9 @@ export default function RootLayout({
                     <footer style={{ padding: '4rem 0', borderTop: '1px solid var(--accent)', marginTop: '4rem' }}>
                         <div className="container" style={{ textAlign: 'center', opacity: 0.6 }}>
                             <p>&copy; {new Date().getFullYear()} Circoplex. All rights reserved.</p>
+                            <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
+                                <Link href="/about-software" style={{ opacity: 0.7 }}>About This Software</Link>
+                            </p>
                         </div>
                     </footer>
                 </div>
